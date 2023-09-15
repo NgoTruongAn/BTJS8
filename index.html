@@ -137,6 +137,7 @@
                     id="btnThem"
                     data-toggle="modal"
                     data-target="#myModal"
+                    onclick="resetForm(), offValid()"
                   >
                     Thêm nhân viên
                   </button>
@@ -156,7 +157,7 @@
                       id="searchName"
                     />
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="btnTimNV"
+                      <span class="input-group-text"  id="btnTimNV"
                         ><i class="fa fa-search"></i
                       ></span>
                     </div>
@@ -334,7 +335,7 @@
                   </div>
                   <select class="form-control" id="chucvu">
                     <option>Chọn chức vụ</option>
-                    <option>Sếp</option>
+                    <option>Giám đốc</option>
                     <option>Trưởng phòng</option>
                     <option>Nhân viên</option>
                   </select>
@@ -364,10 +365,10 @@
 
           <!-- Modal footer -->
           <div class="modal-footer" id="modal-footer">
-            <button id="btnThemNV" type="button" class="btn btn-success">
+            <button id="btnThemNV" type="button" onclick="themNV()" class="btn btn-success">
               Thêm người dùng
             </button>
-            <button id="btnCapNhat" type="button" class="btn btn-success">
+            <button id="btnCapNhat" type="button" onclick="capNhatNhanVien()" class="btn btn-success">
               Cập nhật
             </button>
             <button

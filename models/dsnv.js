@@ -28,7 +28,7 @@ function DSNV() {
     };
   
     this._capNhatNhanVien = function (nhanVien) {
-      var index = this._timViTriNhanVien(nhanVien.maSV);
+      var index = this._timViTriNhanVien(nhanVien.taiKhoan);
       console.log("index: ", index);
       if (index !== -1) {
         this.nhanviens[index] = nhanVien;
